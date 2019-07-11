@@ -16,7 +16,7 @@ var SimpleToast = {
     message,
     duration
   ) {
-    RCTToastAndroid.show(message, duration === undefined ? this.SHORT : duration);
+    RCTToastAndroid.show(message, duration === undefined ? this.LONG : duration);
   },
 
   showWithGravity: function (
@@ -24,7 +24,7 @@ var SimpleToast = {
     duration,
     gravity,
   ) {
-    RCTToastAndroid.showWithGravity(message, duration === undefined ? this.SHORT : duration, gravity);
+    RCTToastAndroid.showWithGravity(message, duration === undefined ? this.LONG : duration, gravity);
   },
 };
 
